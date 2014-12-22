@@ -1,0 +1,149 @@
+Crashlog created at 2014-12-22 00:50:39 -0700
+
+===== MESSAGE:
+
+NameError: undefined local variable or method `tags' for #<Nanoc::Context:0x000000011c6f00>
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /home/craig/dev/craig_gcs_site/Rules:36:in `block in parse'
+  1. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/compilation/compiler.rb:199:in `instance_eval'
+  2. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/compilation/compiler.rb:199:in `block in preprocess'
+  3. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/ordered_hash.rb:70:in `block in each_value'
+  4. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/ordered_hash.rb:70:in `each'
+  5. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/ordered_hash.rb:70:in `each_value'
+  6. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/compilation/compiler.rb:198:in `preprocess'
+  7. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/compilation/compiler.rb:122:in `load'
+  8. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/base/source_data/site.rb:255:in `load'
+  9. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/command_runner.rb:64:in `load_site'
+  10. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/commands/compile.rb:392:in `run'
+  11. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  12. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  13. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  14. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/command_runner.rb:13:in `call'
+  15. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib/cri/command_dsl.rb:223:in `block in runner'
+  16. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `call'
+  17. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:298:in `run_this'
+  18. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:251:in `run'
+  19. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib/cri/command.rb:264:in `run'
+  20. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli.rb:59:in `block in run'
+  21. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/error_handler.rb:74:in `handle_while'
+  22. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  23. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib/nanoc/cli.rb:57:in `run'
+  24. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/bin/nanoc:25:in `<top (required)>'
+  25. /usr/local/bin/nanoc:23:in `load'
+
+===== VERSION INFORMATION:
+
+nanoc 3.7.4 © 2007-2014 Denis Defreyne.
+Running ruby 2.1.5 (2014-11-13) on x86_64-linux-gnu with RubyGems 2.2.2.
+
+===== SYSTEM INFORMATION:
+
+Linux mydeb 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt2-1 (2014-12-08) x86_64 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  bundler 1.7.9
+  colored 1.2
+  cri 2.6.1
+  haml 4.0.6
+  kramdown 1.5.0
+  nanoc 3.7.4
+  rack 1.6.0
+  tilt 2.0.1
+
+===== ENVIRONMENT:
+
+BUNDLE_BIN_PATH => "/var/lib/gems/2.1.0/gems/bundler-1.7.9/bin/bundle"
+BUNDLE_GEMFILE => "/home/craig/dev/craig_gcs_site/Gemfile"
+COLORTERM => "gnome-terminal"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-YWrFlx5EmD,guid=0410500a4793ee1f613cb3b95494cd9d"
+DESKTOP_SESSION => "lightdm-xsession"
+DISPLAY => ":0"
+GDMSESSION => "lightdm-xsession"
+GDM_LANG => "en_US.utf8"
+GEM_HOME => "/var/lib/gems/2.1.0"
+GEM_PATH => "/var/lib/gems/2.1.0:/home/craig/.gem/ruby/2.1.0:/usr/share/rubygems-integration/2.1.0:/usr/share/rubygems-integration/2.1:/usr/share/rubygems-integration/all"
+HOME => "/home/craig"
+LANG => "en_US.UTF-8"
+LOGNAME => "craig"
+LS_COLORS => "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
+MANPATH => "/var/lib/gems/2.1.0/gems/kramdown-1.5.0/man"
+OLDPWD => "/home/craig/dev/craig_gcs_site/output"
+ORBIT_SOCKETDIR => "/tmp/orbit-craig"
+PATH => "/var/lib/gems/2.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+PWD => "/home/craig/dev/craig_gcs_site"
+RUBYLIB => "/var/lib/gems/2.1.0/gems/bundler-1.7.9/lib"
+RUBYOPT => "-rbundler/setup"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AGENT_PID => "994"
+SSH_AUTH_SOCK => "/tmp/ssh-sf5klQgIDPMi/agent.947"
+TERM => "xterm"
+TERMINATOR_UUID => "urn:uuid:cd4bd9f3-a806-46c2-8216-68bbc44cb1a6"
+USER => "craig"
+WINDOWID => "54525955"
+XAUTHORITY => "/home/craig/.Xauthority"
+XDG_GREETER_DATA_DIR => "/var/lib/lightdm/data/craig"
+XDG_RUNTIME_DIR => "/run/user/1000"
+XDG_SEAT => "seat0"
+XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
+XDG_SESSION_ID => "1"
+XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
+XDG_VTNR => "7"
+_ => "/usr/local/bin/bundle"
+_ORIGINAL_GEM_PATH => "/var/lib/gems/2.1.0:/home/craig/.gem/ruby/2.1.0:/usr/share/rubygems-integration/2.1.0:/usr/share/rubygems-integration/2.1:/usr/share/rubygems-integration/all"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    colored (1.2)
+    cri (2.6.1)
+      colored (~> 1.2)
+    haml (4.0.6)
+      tilt
+    kramdown (1.5.0)
+    nanoc (3.7.4)
+      cri (~> 2.3)
+    rack (1.6.0)
+    tilt (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  haml
+  kramdown
+  nanoc
+
+===== LOAD PATHS:
+
+  0. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib
+  1. /var/lib/gems/2.1.0/gems/nanoc-3.7.4/lib
+  2. /var/lib/gems/2.1.0/gems/kramdown-1.5.0/lib
+  3. /var/lib/gems/2.1.0/gems/haml-4.0.6/lib
+  4. /var/lib/gems/2.1.0/gems/tilt-2.0.1/lib
+  5. /var/lib/gems/2.1.0/gems/cri-2.6.1/lib
+  6. /var/lib/gems/2.1.0/gems/colored-1.2/lib
+  7. /var/lib/gems/2.1.0/gems/adsf-1.2.0/lib
+  8. /var/lib/gems/2.1.0/gems/rack-1.6.0/lib
+  9. /var/lib/gems/2.1.0/gems/bundler-1.7.9/lib
+  10. /usr/local/lib/site_ruby/2.1.0
+  11. /usr/local/lib/x86_64-linux-gnu/site_ruby
+  12. /usr/local/lib/site_ruby
+  13. /usr/lib/ruby/vendor_ruby/2.1.0
+  14. /usr/lib/x86_64-linux-gnu/ruby/vendor_ruby/2.1.0
+  15. /usr/lib/ruby/vendor_ruby
+  16. /usr/lib/ruby/2.1.0
+  17. /usr/lib/x86_64-linux-gnu/ruby/2.1.0
